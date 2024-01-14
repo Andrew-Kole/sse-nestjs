@@ -8,7 +8,7 @@ export class PricesConfigService {
     ) {}
 
     get updateInterval() {
-        return 30000;
+        return this.configService.get('RESPONSE_INTERWAL');
     }
 
     get coincapApiUrl() {
